@@ -114,7 +114,7 @@ class AccessToken
 		
 		$this->setToken($response->access_token);
 		
-		return $response->access_token;
+		return $response;
 	}
 	
 	

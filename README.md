@@ -8,7 +8,7 @@
   
   ## 安装
 ```shell
-    composer require anwelblue/easy-weibo
+    composer require "anwelblue/easy-weibo:dev-master"
 ```
 
    ## 配置
