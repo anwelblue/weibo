@@ -1,7 +1,6 @@
 {
 	"name" : "anwelblue/easy-weibo",
 	"description" : "微博开放平台SDK",
-	"version" : "1.0.0-dev",
 	"keywords" : [
 		"weibo",
 		"weiboSDK",
