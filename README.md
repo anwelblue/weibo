@@ -8,7 +8,7 @@
   
   ## 安装
 ```shell
-    composer require anwelblue/weibo
+    composer require anwelblue/easy-weibo
 ```
 
    ## 配置
