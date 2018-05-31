@@ -96,13 +96,13 @@ class AccessToken
      * @throws RequestException
      * @throws UnsetAccessTokenException
      */
-	public function getTokenFromServer($code){
+	public function getTokenFromServer($code,$redirect = null){
 		$data = [
 			'client_id' => $this->appKey,
 			'client_secret' => $this->appSecret,
 			'grant_type' => 'authorization_code',
 			'code' => $code,
-			'redirect_uri' => $this->prepareCallbackUrl()
+			'redirect_uri' => $this->prepareCallbackUrl($redirect)
 		];
 		$response = $this->getHttp()->post(static::API_TOKEN_GET,$data);
 		if(! empty($response->error)){
