@@ -383,7 +383,7 @@ class Server extends AbstractApi
 
             // 被@ 消息
             case 'mention':
-                return new Mention($data->all());
+                $message = new Mention($data->all());
                 break;
             default :
                 $message = new UnSupport($data->all());
