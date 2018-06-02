@@ -86,7 +86,9 @@ class Http
     public function getClient()
     {
         if (!($this->client instanceof Client)) {
-            $this->client = new Client();
+            $this->client = new Client([
+                'verify' => false
+            ]);
         }
 
         return $this->client;
